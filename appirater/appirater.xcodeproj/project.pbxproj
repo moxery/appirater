@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B87C4ADB1593960100EE7779 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87C4ADA1593960100EE7779 /* CFNetwork.framework */; };
+		B87C4ADE1593967200EE7779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87C4ADD1593967200EE7779 /* UIKit.framework */; };
+		B87C4AE01593972900EE7779 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87C4ADF1593972900EE7779 /* SystemConfiguration.framework */; };
+		B886B0F01593824C00A5BAD1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B886B0EF1593824C00A5BAD1 /* Foundation.framework */; };
+		B886B1051593827A00A5BAD1 /* Appirater.h in Headers */ = {isa = PBXBuildFile; fileRef = B886B1031593827A00A5BAD1 /* Appirater.h */; };
+		B886B1061593827A00A5BAD1 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = B886B1041593827A00A5BAD1 /* Appirater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B87C4ADA1593960100EE7779 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B87C4ADD1593967200EE7779 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B87C4ADF1593972900EE7779 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B886B0EC1593824C00A5BAD1 /* libappirater.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libappirater.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B886B0EF1593824C00A5BAD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B886B0F31593824C00A5BAD1 /* appirater-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appirater-Prefix.pch"; sourceTree = "<group>"; };
+		B886B1031593827A00A5BAD1 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Appirater.h; path = ../../Appirater.h; sourceTree = "<group>"; };
+		B886B1041593827A00A5BAD1 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Appirater.m; path = ../../Appirater.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B886B0E91593824C00A5BAD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87C4ADE1593967200EE7779 /* UIKit.framework in Frameworks */,
+				B87C4AE01593972900EE7779 /* SystemConfiguration.framework in Frameworks */,
+				B87C4ADB1593960100EE7779 /* CFNetwork.framework in Frameworks */,
+				B886B0F01593824C00A5BAD1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B886B0E11593824C00A5BAD1 = {
+			isa = PBXGroup;
+			children = (
+				B886B0F11593824C00A5BAD1 /* appirater */,
+				B886B0EE1593824C00A5BAD1 /* Frameworks */,
+				B886B0ED1593824C00A5BAD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B886B0ED1593824C00A5BAD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B886B0EC1593824C00A5BAD1 /* libappirater.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B886B0EE1593824C00A5BAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87C4ADF1593972900EE7779 /* SystemConfiguration.framework */,
+				B87C4ADD1593967200EE7779 /* UIKit.framework */,
+				B87C4ADA1593960100EE7779 /* CFNetwork.framework */,
+				B886B0EF1593824C00A5BAD1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B886B0F11593824C00A5BAD1 /* appirater */ = {
+			isa = PBXGroup;
+			children = (
+				B886B1021593826800A5BAD1 /* Classes */,
+				B886B0F21593824C00A5BAD1 /* Supporting Files */,
+			);
+			path = appirater;
+			sourceTree = "<group>";
+		};
+		B886B0F21593824C00A5BAD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B886B0F31593824C00A5BAD1 /* appirater-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B886B1021593826800A5BAD1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B886B1031593827A00A5BAD1 /* Appirater.h */,
+				B886B1041593827A00A5BAD1 /* Appirater.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B886B0EA1593824C00A5BAD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B886B1051593827A00A5BAD1 /* Appirater.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B886B0EB1593824C00A5BAD1 /* appirater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B886B0F91593824C00A5BAD1 /* Build configuration list for PBXNativeTarget "appirater" */;
+			buildPhases = (
+				B886B0E81593824C00A5BAD1 /* Sources */,
+				B886B0E91593824C00A5BAD1 /* Frameworks */,
+				B886B0EA1593824C00A5BAD1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appirater;
+			productName = appirater;
+			productReference = B886B0EC1593824C00A5BAD1 /* libappirater.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B886B0E31593824C00A5BAD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Moxery Inc.";
+			};
+			buildConfigurationList = B886B0E61593824C00A5BAD1 /* Build configuration list for PBXProject "appirater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B886B0E11593824C00A5BAD1;
+			productRefGroup = B886B0ED1593824C00A5BAD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B886B0EB1593824C00A5BAD1 /* appirater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B886B0E81593824C00A5BAD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B886B1061593827A00A5BAD1 /* Appirater.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B886B0F71593824C00A5BAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B886B0F81593824C00A5BAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B886B0FA1593824C00A5BAD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				DSTROOT = /tmp/appirater.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "appirater/appirater-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 armv7";
+			};
+			name = Debug;
+		};
+		B886B0FB1593824C00A5BAD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				DSTROOT = /tmp/appirater.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "appirater/appirater-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 x86_64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B886B0E61593824C00A5BAD1 /* Build configuration list for PBXProject "appirater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B886B0F71593824C00A5BAD1 /* Debug */,
+				B886B0F81593824C00A5BAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B886B0F91593824C00A5BAD1 /* Build configuration list for PBXNativeTarget "appirater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B886B0FA1593824C00A5BAD1 /* Debug */,
+				B886B0FB1593824C00A5BAD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B886B0E31593824C00A5BAD1 /* Project object */;
+}

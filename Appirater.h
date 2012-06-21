@@ -35,6 +35,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 extern NSString *const kAppiraterFirstUseDate;
 extern NSString *const kAppiraterUseCount;
@@ -47,30 +48,30 @@ extern NSString *const kAppiraterReminderRequestDate;
 /*
  Place your Apple generated software id here.
  */
-#define APPIRATER_APP_ID				301377083
+//#define APPIRATER_APP_ID				1234567890
 
 /*
  Your app's name.
  */
-#define APPIRATER_APP_NAME				[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleNameKey]
+#define APPIRATER_APP_NAME				[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 
 /*
  This is the message your users will see once they've passed the day+launches
  threshold.
  */
-#define APPIRATER_LOCALIZED_MESSAGE     NSLocalizedString(@"If you enjoy using %@, would you mind taking a moment to rate it? It won't take more than a minute. Thanks for your support!", nil)
+#define APPIRATER_LOCALIZED_MESSAGE     NSLocalizedString(@"Enjoy %@? Please help us improve the app by providing a 5 star rating.", nil)
 #define APPIRATER_MESSAGE				[NSString stringWithFormat:APPIRATER_LOCALIZED_MESSAGE, APPIRATER_APP_NAME]
 
 /*
  This is the title of the message alert that users will see.
  */
-#define APPIRATER_LOCALIZED_MESSAGE_TITLE   NSLocalizedString(@"Rate %@", nil)
+#define APPIRATER_LOCALIZED_MESSAGE_TITLE   NSLocalizedString(@"Rate 5 Stars", nil)
 #define APPIRATER_MESSAGE_TITLE             [NSString stringWithFormat:APPIRATER_LOCALIZED_MESSAGE_TITLE, APPIRATER_APP_NAME]
 
 /*
  The text of the button that rejects reviewing the app.
  */
-#define APPIRATER_CANCEL_BUTTON			NSLocalizedString(@"No, Thanks", nil)
+#define APPIRATER_CANCEL_BUTTON			NSLocalizedString(@"No Thanks", nil)
 
 /*
  Text of button that will send user to app review page.
@@ -81,13 +82,13 @@ extern NSString *const kAppiraterReminderRequestDate;
 /*
  Text for button to remind the user to review later.
  */
-#define APPIRATER_RATE_LATER			NSLocalizedString(@"Remind me later", nil)
+#define APPIRATER_RATE_LATER			NSLocalizedString(@"Later", nil)
 
 /*
  Users will need to have the same version of your app installed for this many
  days before they will be prompted to rate it.
  */
-#define APPIRATER_DAYS_UNTIL_PROMPT		30		// double
+#define APPIRATER_DAYS_UNTIL_PROMPT		10		// double
 
 /*
  An example of a 'use' would be if the user launched the app. Bringing the app
@@ -99,7 +100,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  Users need to 'use' the same version of the app this many times before
  before they will be prompted to rate it.
  */
-#define APPIRATER_USES_UNTIL_PROMPT		20		// integer
+#define APPIRATER_USES_UNTIL_PROMPT		15		// integer
 
 /*
  A significant event can be anything you want to be in your app. In a
@@ -130,8 +131,10 @@ extern NSString *const kAppiraterReminderRequestDate;
 @interface Appirater : NSObject <UIAlertViewDelegate> {
 
 	UIAlertView		*ratingAlert;
+    NSString        *appId;
 }
 
+@property(nonatomic, retain) NSString *appId;
 @property(nonatomic, retain) UIAlertView *ratingAlert;
 
 /*
@@ -199,5 +202,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  whether to rate the app.
  */
 + (void)rateApp;
+
++ (void)setAppId:(NSString *)appId;
 
 @end
