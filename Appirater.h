@@ -37,7 +37,6 @@
 #import <Foundation/Foundation.h>
 #import "AppiraterDelegate.h"
 #import <StoreKit/StoreKit.h>
->>>>>>> 64a474180f061792c40a14f0ca9fd1e2a17736a9
 
 extern NSString *const kAppiraterFirstUseDate;
 extern NSString *const kAppiraterUseCount;
@@ -92,6 +91,7 @@ extern NSString *const kAppiraterReminderRequestDate;
     NSString        *appId;
 }
 
+@property(nonatomic, strong) NSString *appId;
 @property(nonatomic, strong) UIAlertView *ratingAlert;
 #if __has_feature(objc_arc_weak)
 @property(nonatomic, weak) NSObject <AppiraterDelegate> *delegate;
